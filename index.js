@@ -14,6 +14,10 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: true }));
 
+app.get("/", (req, res) => {
+    res.statusCode(200).send({message: "welcome to api"});
+})
+
 //Register new patient
 app.post("/api/register", (req, res) => {
   pool.query(

@@ -5,7 +5,7 @@ const { createPool } = require("mysql");
 const pool = createPool({
   host: "localhost",
   user: "root",
-  password: "mayk2003",
+  password: "",
   database: "Hospital",
   connectionLimit: 10,
 });
